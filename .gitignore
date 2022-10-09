@@ -1,0 +1,4 @@
+# Node modules and test results
+node_modules
+cypress/results
+cypress/.DS_Store
