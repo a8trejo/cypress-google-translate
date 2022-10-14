@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('logMsg', (logMsg) => {
+Cypress.Commands.add('logger', (logMsg) => {
     cy.task('logMsg', logMsg)
     cy.log(logMsg);
 });

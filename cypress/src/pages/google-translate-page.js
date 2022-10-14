@@ -14,7 +14,7 @@ class GoogleTranslatePage {
             case 'textOutput': return cy.get("#ucj-3 + .tm8pq")
             case 'circleLoader': return cy.get("#ucj-2 + div .OucA2b [role='progressbar']")
             case 'swapBtn': return cy.get("#ucj-2 + div c-wiz[jscontroller='Un38xf']>div:nth-child(3) .VfPpkd-Bz112c-RLmnJb")
-            case 'translatedText': return cy.get('span.Q4iAWc')
+            case 'translatedText': return cy.get('#ucj-4 ~ div span[lang]>span>span[jsaction]')
             case 'keyboardOn': return cy.get("#itamenu a.ita-kd-inputtool-icon")
             case 'inputToolsBtn': return cy.get("span.ita-kd-inputtools-div [aria-label*='Input Tools']")
             case 'inputToolsOptions': return cy.get("li.ita-kd-menuitem .ita-kd-menuitem-inputtool-name")

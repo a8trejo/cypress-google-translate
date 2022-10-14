@@ -2,6 +2,7 @@ import GoogleTranslatePage from '../pages/google-translate-page'
 import testData from '../../fixtures/languages.json'
 
 const translatePage = new GoogleTranslatePage();
+Cypress.config('baseUrl', Cypress.env('translatePath'))
 
 describe('Google Translate Testing Suite', () => {
     it('Translate a text', () => {

@@ -4,7 +4,7 @@ const fs = require('fs-extra');
 module.exports = defineConfig({
   browser: "chrome",
   e2e: {
-    baseUrl: "https://translate.google.com/",
+    baseUrl: "https://www.google.com",
     watchForFileChanges: false,
     specPattern: ["cypress/**/specs/**/*.cy.{js,jsx,ts,tsx}"],
     pageLoadTimeout: 50000,
@@ -21,6 +21,10 @@ module.exports = defineConfig({
     reporter: "cypress-multi-reporters",
     reporterOptions: {
         "configFile": "cypress/config/reporter-configs.json"
+    },
+    env: {
+      "translatePath": "https://translate.google.com",
+      "calculatorPath": "/search?q=calculator"
     },
     setupNodeEvents,
   }

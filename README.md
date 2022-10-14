@@ -21,4 +21,5 @@ In order to run the automated test suite, please follow the steps described belo
    - Headless execution (generates the reports)  
      1. Execute the command `npx cypress run`
 
-5. To generate the mochawesome complete report, run the command:  `npm run cy:report`
+5. To generate the mochawesome complete report, run the command:  `npm run cy:report`, you'll find the generated report at the directory below:
+  - `cypress/results/reports/mochawesome_complete/complete-report.html`
